@@ -3,6 +3,40 @@
 <head>
 <title>OMAR cic</title>
 <style>
+.navbar{
+height:100px;
+width:100%;
+background:rgba(0,0,0,0.5);
+}
+.logo{
+width:90px;
+height:90px;
+margin-left:20px;
+margin-top:10px;
+border:1px solid white;
+} 
+.navbar ul{
+float:right;
+margin-right:30px;
+} 
+.navbar ul li{
+list-style-type:none;
+display:inline-block;
+margin:0 8px;
+line-height:80px;
+}
+.navbar ul li a{
+text-decoration:none;
+color:white;
+font-size:20px;
+padding:6px 13px;
+transition:.5s;
+}
+.navbar ul li a.active, .navbar ul li a:hover{
+background:red;
+border-radius:2px;
+}
+
 .omar_img {
   display: block;
   margin-left: auto;
@@ -99,6 +133,17 @@ text-align:center;
 </head>
 
 <body>
+
+<nav class="navbar"> 
+ <img class="logo" src="amg2.jpg">
+ <ul>
+ <li><a href="#" class="active">Home</a></li>
+ <li><a href="#" >Service</a></li> 
+ <li><a href="#" >About us</a></li>
+ <li><a href="#" >Contact us</a></li>
+ </ul>
+ </nav> 
+
 <div class="hassan">
 <image src="img/img_1.jpeg" alt="omar" widt h="250px" height="250px" class="omar_img">
 <p>OMAR</p>
